@@ -12,41 +12,33 @@ An interactive **Streamlit web app** that provides **real-time weather updates**
 
 ## **Demo**
 
-Here are some screenshots of the AI Weather & Chat Assistant in action:
-![Weather report example](images/Image1.png)
-![Temperature Forecast example](images/Image2.png)
+Here are some screenshots of the AI Weather & Chat Assistant in action:  
+![Weather report example](images/Image1.png)  
+![Temperature Forecast example](images/Image2.png)  
 
 ## **Installation**
 
-1. **Clone the repository**:
+```bash
+# 1. Clone the repository
+git clone https://github.com/yourusername/weather-chat-assistant.git
+cd weather-chat-assistant
 
-   git clone https://github.com/yourusername/weather-chat-assistant.git  
-   cd weather-chat-assistant
+# 2. Create a virtual environment
+python -m venv venv
 
-2. **Create a virtual environment**:
+# 3. Activate the virtual environment
+# Windows:
+venv\Scripts\activate
+# Mac/Linux:
+source venv/bin/activate
 
-   python -m venv venv
+# 4. Install dependencies
+pip install -r requirements.txt
 
-3. **Activate the virtual environment**:
-
-   - **Windows**:
-
-     venv\Scripts\activate
-
-   - **Mac/Linux**:
-
-     source venv/bin/activate
-
-4. **Install dependencies**:
-
-   pip install -r requirements.txt
-
-5. **Set up environment variables**:
-
-   - Open `.env` and add your API keys:
-
-     OPENWEATHER_API_KEY=your_openweather_key_here  
-     GROQ_API_KEY=your_groq_key_here
+# 5. Set up environment variables
+# Open `.env` and add:
+OPENWEATHER_API_KEY=your_openweather_key_here
+GROQ_API_KEY=your_groq_key_here
 
 ## **Usage**
 
@@ -67,24 +59,23 @@ Here are some screenshots of the AI Weather & Chat Assistant in action:
 4. Click **Ask** to get the AI-generated response.
 
 ## **Project Structure**
-
-AI-Weather-Chat-Assistant/  
+AI-Weather-Chat-Assistant/
 ├─ app.py                 # Streamlit app  
 ├─ utils.py               # Functions for weather fetching & LLM  
 ├─ requirements.txt       # Python dependencies  
 ├─ README.md              # Project documentation  
 ├─ .gitignore             # Files to ignore in git  
-├─ .env                   # To store screats API keys  
-├─ images/                # Screenshots  
-│   ├─ Screenshot 2025-08-21 132557.png  
-│   └─ Screenshot 2025-08-21 132644.png  
+├─ .env                   # To store secrets API keys  
+├─ images/                # Images  
+│   ├─ Image1.png  
+│   └─ Image2.png  
 ├─ models/                # (Optional) Local ML models  
-└─ notebooks/             # (Optional) Exploration notebooks  
+└─ notebooks/             # (Optional) Exploration notebooks
 
 ## **Environment Variables**
 
 OPENWEATHER_API_KEY  # API key for OpenWeather API (fetches live weather data)  
-GROQ_API_KEY         # API key for Groq LLM (handles chat & weather report generation)  
+GROQ_API_KEY         # API key for Groq LLM (handles chat & weather report generation)
 
 ## **Dependencies**
 
@@ -107,6 +98,9 @@ GROQ_API_KEY         # API key for Groq LLM (handles chat & weather report gener
 - Integrate with **Google Calendar** to plan events based on the forecast.  
 - Add **multi-language support** for weather reports and chat responses.  
 
-## **License**
+## **Contact**
 
-This project is open-source and available under the MIT License.
+Created by Muhammad Abdullah  
+📧 Email: abdullah2648.khan@gmail.com  
+📞 Phone: +92-319-9539210  
+
