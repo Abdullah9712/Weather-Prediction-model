@@ -78,13 +78,13 @@ GROQ_API_KEY=your_groq_key_here
 
 ## **Project Structure**
 AI-Weather-Chat-Assistant/
-├─ app.py              # Streamlit app
-├─ utils.py            # Functions for weather fetching & LLM
-├─ requirements.txt    # Python dependencies
-├─ README.md           # Project documentation
-├─ .gitignore          # Files to ignore in git
-├─ .env                # To store secrets API keys
-├─ images/             # Images
+├─ app.py            # Streamlit app
+├─ utils.py          # Functions for weather fetching & LLM
+├─ requirements.txt  # Python dependencies
+├─ README.md         # Project documentation
+├─ .gitignore        # Files to ignore in git
+├─ .env              # To store secrets API keys
+├─ images/           # Images
 │ ├─ Image1.png
 │ └─ Image2.png
 
