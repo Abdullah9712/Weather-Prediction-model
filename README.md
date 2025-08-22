@@ -77,16 +77,17 @@ GROQ_API_KEY=your_groq_key_here
 4. Click **Ask** to get the AI-generated response.
 
 ## **Project Structure**
-AI-Weather-Chat-Assistant/
-├─ app.py            # Streamlit app
-├─ utils.py          # Functions for weather fetching & LLM
-├─ requirements.txt  # Python dependencies
-├─ README.md         # Project documentation
-├─ .gitignore        # Files to ignore in git
-├─ .env              # To store secrets API keys
-├─ images/           # Images
-│ ├─ Image1.png
-│ └─ Image2.png
+
+AI-Weather-Chat-Assistant/ – Main project folder  
+app.py – Streamlit app to run the interface and handle user input  
+utils.py – Functions for fetching weather data and interacting with LLaMA3-8B-8192 via Groq API  
+requirements.txt – Python dependencies to install  
+README.md – Project documentation  
+.gitignore – Files and folders to ignore in Git  
+.env – Stores secret API keys (OpenWeather and Groq)  
+images/ – Contains screenshots of the app  
+  Image1.png – Example weather report screenshot  
+  Image2.png – Example temperature forecast screenshot  
 
 ## **Future Improvements**
 
