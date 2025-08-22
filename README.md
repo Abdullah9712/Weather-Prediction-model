@@ -39,13 +39,13 @@ pip install -r requirements.txt
 # Open `.env` and add:
 OPENWEATHER_API_KEY=your_openweather_key_here
 GROQ_API_KEY=your_groq_key_here
-
+```
 ## **Usage**
 
 1. Run the Streamlit app:
-
+```bash
    streamlit run app.py
-
+```
 2. Open the URL shown in your terminal (usually `http://localhost:8501`) in a browser.  
 
 3. Type a query in the input box:
