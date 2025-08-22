@@ -13,8 +13,8 @@ An interactive **Streamlit web app** that provides **real-time weather updates**
 ## **Demo**
 
 Here are some screenshots of the AI Weather & Chat Assistant in action:
-![Weather report example](images/Screenshot 2025-08-21 132557.png)
-![Chat response example](images/Screenshot 2025-08-21 132644.png)
+![Weather report example](images/Image1.png)
+![Temperature Forecast example](images/Image2.png)
 
 ## **Installation**
 
