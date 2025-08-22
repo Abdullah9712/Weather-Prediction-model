@@ -1,11 +1,11 @@
 # 🌦️ AI Weather & Chat Assistant
-
-An interactive **Streamlit web app** that provides **real-time weather updates** for any city worldwide and answers general chat queries using an **LLM (Groq API)**.  
+ 
+An interactive **Streamlit web app** that provides **real-time weather updates** for any city worldwide and answers general chat queries using the **LLaMA3-8B-8192 LLM** (served via **Groq API**).  
 
 ## **Features**
 
 - Fetches **real-time weather data** using the **OpenWeather API**.  
-- Generates **friendly, human-readable weather reports** in 4–5 sentences using **Groq LLM**.  
+- Generates **friendly, human-readable weather reports** in 4–5 sentences using **LLaMA3-8B-8192 (via Groq API)**.  
 - Handles **general chat queries** using the same LLM.  
 - Clean separation of **API keys** using `.env` for security.  
 - User-friendly interface built with **Streamlit**.  
@@ -16,15 +16,32 @@ Here are some screenshots of the AI Weather & Chat Assistant in action:
 ![Weather report example](images/Image1.png)  
 ![Temperature Forecast example](images/Image2.png)  
 
-## **Installation**
+## **Prerequisites**
+
+- **Python 3.12** installed (recommended).  
+- **OpenWeather API key** → Get one from **[openweathermap.org/api](https://openweathermap.org/api)**.  
+- **Groq API key** → Generate one at **[console.groq.com/keys](https://console.groq.com/keys)**.  
+- **Git** installed → Download from **[git-scm.com](https://git-scm.com/)**.
+
+- **Python dependencies** (installed via `requirements.txt`):  
+
+  - Streamlit  
+  - Requests  
+  - Groq Python SDK  
+  - python-dotenv  
+
+## **Setup**
 
 ```bash
 # 1. Clone the repository
 git clone https://github.com/yourusername/weather-chat-assistant.git
 cd weather-chat-assistant
 
-# 2. Create a virtual environment
-python -m venv venv
+# 2. Create a virtual environment (Python 3.12)
+# On Windows:
+py -3.12 -m venv venv
+# On Mac/Linux:
+python3.12 -m venv venv
 
 # 3. Activate the virtual environment
 # Windows:
@@ -36,15 +53,16 @@ source venv/bin/activate
 pip install -r requirements.txt
 
 # 5. Set up environment variables
-# Open `.env` and add:
-OPENWEATHER_API_KEY=your_openweather_key_here
-GROQ_API_KEY=your_groq_key_here
+# Create a `.env` file in the project root and add the following:
+OPENWEATHER_API_KEY=your_openweather_key_here   # Get from https://openweathermap.org/api
+GROQ_API_KEY=your_groq_key_here                 # Get from https://console.groq.com/keys
 ```
+
 ## **Usage**
 
 1. Run the Streamlit app:
 ```bash
-   streamlit run app.py
+   streamlit run "weather model/app.py"
 ```
 2. Open the URL shown in your terminal (usually `http://localhost:8501`) in a browser.  
 
@@ -60,30 +78,15 @@ GROQ_API_KEY=your_groq_key_here
 
 ## **Project Structure**
 AI-Weather-Chat-Assistant/
-├─ app.py                 # Streamlit app  
-├─ utils.py               # Functions for weather fetching & LLM  
-├─ requirements.txt       # Python dependencies  
-├─ README.md              # Project documentation  
-├─ .gitignore             # Files to ignore in git  
-├─ .env                   # To store secrets API keys  
-├─ images/                # Images  
-│   ├─ Image1.png  
-│   └─ Image2.png  
-├─ models/                # (Optional) Local ML models  
-└─ notebooks/             # (Optional) Exploration notebooks
-
-## **Environment Variables**
-
-OPENWEATHER_API_KEY  # API key for OpenWeather API (fetches live weather data)  
-GROQ_API_KEY         # API key for Groq LLM (handles chat & weather report generation)
-
-## **Dependencies**
-
-- Python 3.7+  
-- Streamlit  
-- Requests  
-- Groq Python SDK  
-- python-dotenv  
+├─ app.py                 # Streamlit app
+├─ utils.py               # Functions for weather fetching & LLM
+├─ requirements.txt       # Python dependencies
+├─ README.md              # Project documentation
+├─ .gitignore             # Files to ignore in git
+├─ .env                   # To store secrets API keys
+├─ images/                # Images
+│ ├─ Image1.png
+│ └─ Image2.png
 
 ## **Future Improvements**
 
