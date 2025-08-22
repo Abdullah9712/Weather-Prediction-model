@@ -54,8 +54,8 @@ pip install -r requirements.txt
 
 # 5. Set up environment variables
 # Create a `.env` file in the project root and add the following:
-OPENWEATHER_API_KEY=your_openweather_key_here   # Get from https://openweathermap.org/api
-GROQ_API_KEY=your_groq_key_here                 # Get from https://console.groq.com/keys
+OPENWEATHER_API_KEY=your_openweather_key_here  
+GROQ_API_KEY=your_groq_key_here                 
 ```
 
 ## **Usage**
@@ -78,13 +78,13 @@ GROQ_API_KEY=your_groq_key_here                 # Get from https://console.groq.
 
 ## **Project Structure**
 AI-Weather-Chat-Assistant/
-├─ app.py                 # Streamlit app
-├─ utils.py               # Functions for weather fetching & LLM
-├─ requirements.txt       # Python dependencies
-├─ README.md              # Project documentation
-├─ .gitignore             # Files to ignore in git
-├─ .env                   # To store secrets API keys
-├─ images/                # Images
+├─ app.py              # Streamlit app
+├─ utils.py            # Functions for weather fetching & LLM
+├─ requirements.txt    # Python dependencies
+├─ README.md           # Project documentation
+├─ .gitignore          # Files to ignore in git
+├─ .env                # To store secrets API keys
+├─ images/             # Images
 │ ├─ Image1.png
 │ └─ Image2.png
 
